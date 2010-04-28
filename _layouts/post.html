@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>rorrego.github.com</title>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css" media="screen" />
+</head>
+<body>
+  <div id="header">
+    <h1><a href="/">rorrego.github.com</a></h1>
+    <div id="menu">
+      <ul id="nav">
+        <li><a href="/">Home</a></li>
+        <!--<li><a href="/">About Me</a></li>-->
+      </ul>
+    </div>
+  </div>
+  <div id="content">
+    <div id="right">
+      <div class='post'>
+        <h1>{{ page.title }} <span class='date'>{{ page.date}}.</span></h1>
+        {{ page.content }}
+      </div>
+      <div id="disqus_thread"></div>
+      <script type="text/javascript">
+          var disqus_identifier; 
+        (function() {
+         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+         dsq.src = 'http://rorrego-github.disqus.com/embed.js';
+         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+      </script>
+      <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=rorrego-github">comments powered by Disqus.</a></noscript>
+      <a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </div>
+    <div id="left">
+      <div class="box">
+        <h2>About :</h2>
+        <p>
+        <img src='/images/1.jpg' width='50' height='50' style='float: left; margin-right: 5px;' />
+          skdnkasndas
+        </p>
+        <br />
+      </div>
+      <div class="box">
+        <h2>Links :</h2>
+        <ul>
+          <li><a href="http://www.minimalistic-design.info">Web Design Directory</a></li>
+          <li><a href="http://www.historyexplorer.net">History Timelines</a></li>
+          <li><a href="http://www.minimalistic-design.net">Free templates</a></li>
+        </ul>
+      </div>
+      <div class="box">
+        <div style="font-size: 0.8em;">Design by <a href="http://www.minimalistic-design.net">Minimalistic Design</a></div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+  //<![CDATA[
+  (function() {
+  	var links = document.getElementsByTagName('a');
+  	var query = '?';
+  	for(var i = 0; i < links.length; i++) {
+  	if(links[i].href.indexOf('#disqus_thread') >= 0) {
+  		query += 'url' + i + '=' + encodeURIComponent(links[i].href) + '&';
+  	}
+  	}
+  	document.write('<script charset="utf-8" type="text/javascript" src="http://disqus.com/forums/rorrego-github/get_num_replies.js' + query + '"></' + 'script>');
+  })();
+  //]]>
+  </script>  
+</body>
+</html>
